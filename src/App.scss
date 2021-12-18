@@ -1,0 +1,40 @@
+@import "../src/Assets/scss/fonts.scss";
+
+/* GENERAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  background: linear-gradient(180deg, #06476B 0%, #000000 100%);
+  backdrop-filter: blur(4px);
+}
+
+img {
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  
+}

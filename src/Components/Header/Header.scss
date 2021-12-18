@@ -1,0 +1,251 @@
+
+.site-header {
+    
+    .site-header__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0 0;
+    }
+    .header-top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        
+        .header-top__left {
+            margin-right: auto;
+            .header-top__tel {
+                font-size: 12px;
+                line-height: 16px;
+                color: #969696;
+                margin-bottom: 55px;
+            }
+            .header-top__list {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                .header-top__item {
+                    
+                    padding: 0px;
+                    
+                    .header-top__lang-link {
+                        text-decoration: none;
+                        color: #fff;
+                        padding: 5px;
+                        background-color: #285474;
+                    }
+                    .header-top__link-active {
+                        background-color: #0b1e2c;
+                    }
+                }
+                .header-top__item ~ .header-top__item {
+                    margin-left: 15px;
+                }
+                
+            }
+        }
+        
+        .site-logo__link {
+            display: block;
+            margin-left: 140px;
+        }
+
+        .header-top__right {
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 50px;
+            margin-left: auto;
+            .header-lang__btn {
+                background-color: transparent;
+                border: transparent;
+                color: #fff;
+                display: flex;
+                cursor: pointer;
+                margin-right: 10px;
+                img {
+                    margin-right: 5px;
+                }
+            }
+            .modal-lang__select {
+                display: none;
+                position: absolute;
+                top: 0px;
+                background-color: #fff;
+                z-index: 1;
+                padding: 5px;
+                .modal-lang__btn {
+                    display: inline-block;
+                    background-color: transparent;
+                    border: transparent;
+                    margin-bottom: 5px;
+                    padding: 5px;
+                    display: flex;
+                    align-items: center;
+                    margin: 5px 0;
+                    cursor: pointer;
+                    img {
+                        max-width: 30px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            
+            .header-btn__box {
+                display: flex;
+                align-items: center;
+                position: relative;
+            }
+            .header__btn {
+                background-color: transparent;
+                border: transparent;
+                margin-right: 15px;
+                padding: 5px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #969696;
+                cursor: pointer;
+                svg {
+                    path {
+                        fill: white;
+                    }
+                }
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+            .search-open__btn {
+                
+                svg {
+                    display: block;
+                }
+            }
+
+            .header-btn__big-wrap {
+                overflow: hidden;
+            }
+
+            .search-input__wrap {
+                position: relative;
+                padding: 0 10px;
+                position: absolute;
+                background-color: #fff;
+                align-items: center;
+                right: -230px;
+                top: 15px;
+                border-radius: 6px;
+                transition: all 0.3s ease-in-out;
+                .search-input__btn {
+                    position: absolute; 
+                    width: 10px;
+                    height: 10px;
+                    background-size: contain;
+                    cursor: pointer;
+                    background-image: url('../../Assets/image/minefer.jsx');
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                    svg {
+                        display: inline-block;
+                        path {
+                            fill: black;
+                        }
+                    }
+                }   
+                .search__input {
+                    border: transparent;
+                    outline: none;
+                    padding: 10px;
+                    font-size: 16px;
+                    height: 40px;
+                    color: #000;
+                    
+                }
+            }
+        }
+    }
+    .header-bottom {
+        padding: 30px 0 0 0;
+        width: 100%;
+        background-color: #1f1f1f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .header-links-list {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            
+            .header-links-item {
+                .header-link {
+                    display: block;
+                    text-decoration: none;
+                    color: #fff;
+                    padding-bottom: 25px;
+                    border-bottom: 4px solid transparent;
+                    font-size: 17px;
+                    line-height: 22px;
+                    text-transform: uppercase;
+                    &:hover {
+                        border-bottom: 4px solid #fff;
+
+                    }
+                }
+            }
+            .header-links-item ~ .header-links-item {
+                margin-left: 100px;
+
+            }
+        }
+    }
+
+}
+.modal-link {
+    display: none;
+    background: linear-gradient(180deg, #06476B 0%, #000000 100%);
+    backdrop-filter: blur(5px);
+    transition: all 0.5s;
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    z-index: 999;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+    .modal-link__wrapper {
+        padding: 80px 40px;
+        display: flex;
+        .modal-wrapper__left {
+            margin-right: 20px;
+            .modal-clothes__categories {
+                list-style-type: none;
+                li {
+                    margin-top: 5px;
+                }
+            }
+        }
+        .modal-wrapper__brand-box {
+            
+            padding: 10px;
+            display: flex;
+            margin-right: 150px;
+            .modal-brands__wrapper-list {
+                list-style-type: none;
+                margin-right: 25px;
+                li {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+.link-unstyled {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
