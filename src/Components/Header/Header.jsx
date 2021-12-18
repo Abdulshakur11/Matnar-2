@@ -119,7 +119,7 @@ function Header() {
                         <ul className="modal-brands__wrapper-list">
                             <li><Link className="link-unstyled" to="/">Alexander McQueen</Link></li>
                             <li><Link className="link-unstyled" to="/">Balenciaga</Link></li>
-                            <li><Link className="link-unstyled" to="/">Bottega Veneta</Link></li>
+                            <li><Link className="link-unstyled" to="/">Bottega Venet</Link></li>
                             <li><Link className="link-unstyled" to="/">Brunello Cucinelli</Link></li>
                             <li><Link className="link-unstyled" to="/">Burberry</Link></li>
                             <li><Link className="link-unstyled" to="/">Dolce & Gabbana</Link></li>
